@@ -1,24 +1,12 @@
-BSD 2-Clause License
+# قواعد محاسباتی نسخه اولیه
+- RSI14: میانگین ساده سود/ضرر ۱۴ تغییر قیمت اخیر.
+- SMA20: میانگین بسته‌شدن ۲۰ کندل اخیر.
+- ATR14: میانگین True Range کندل‌های اخیر.
+- حمایت/مقاومت: کمینه Low و بیشینه High در حداکثر ۲۰ کندل اخیر.
+- حد ضرر: کمینه‌ی ۹۹٫۲٪ حمایت و قیمت مبنا منهای ۱٫۵ ATR.
+- بودجه ریسک: سرمایه × درصد ریسک.
+- اندازه کل برآوردی موقعیت: بودجه ریسک ÷ فاصله قیمت مبنا تا حد ضرر.
+- پله‌ها: ۲۵٪، ۳۵٪ و ۴۰٪ از اندازه برآوردی موقعیت؛ قیمت‌های سناریویی ۹۹٪، ۹۶٫۵٪ و ۹۳٫۵٪ قیمت مبنا.
+- اهداف: ۱R، ۲R و بیشینه مقاومت/۳R.
 
-Copyright (c) 2026, hoseinmost64-svg
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
-
-1. Redistributions of source code must retain the above copyright notice, this
-   list of conditions and the following disclaimer.
-
-2. Redistributions in binary form must reproduce the above copyright notice,
-   this list of conditions and the following disclaimer in the documentation
-   and/or other materials provided with the distribution.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
-FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+این قواعد برای نمونه‌سازی‌اند و نباید بدون بک‌تست به‌عنوان استراتژی اثبات‌شده استفاده شوند. به‌ویژه محاسبه مقدار هر پله در نسخه فعلی بر اساس ریسک کل در قیمت مبنا انجام می‌شود؛ در نسخه عملیاتی باید اندازه موقعیت و ریسک تجمیعی با قیمت اجرای هر پله دوباره محاسبه شود.
